@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <style>
+        body {
+            font-family: Courier New, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+       header {
+            background-color: #a35618;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 660px;
+			height: 560px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(163, 86, 24, 39);
+        }
+		
+		/* Стили для рамки с информацией о Soft Skills */
+        .soft-skills {
+			position: relative;
+            bottom: 260px;
+			left: 300px;
+
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 20px;
+			width: 300px;
+			height: 190px;
+        }
+
+        /* Стили для заголовка Soft Skills */
+        .soft-skills h2 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+		
+		.soft-skills p {
+            font-size: 13px;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1;
+        }
+		
+
+        /* Стили для боковых панелей */
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+            transition: 0.2s;
+        }
+
+        .sidenav a:hover {
+            background-color: #555;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 30px;
+        }
+
+        /* Стили для изображения */
+        .profile-image {
+            display: block;
+            margin: 0 auto;
+            width: 120px; /* Установите желаемую ширину изображения */
+            border-radius: 10%; /* Для круглой формы */
+        }
+		
+		/* Стили для кнопки переключения языка */
+        .lang-switch {
+            position: relative;
+            top: 303px;
+            left: 920px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+		/* Стили для английского текста */
+        .lang-en {
+            display: none; /* Сначала скрыть английский текст */
+        }
+
+        /* Стили для русского текста */
+        .lang-ua {
+            display: block; /* отображается по умолчанию */
+        }
+		
+		
+    </style>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<h2 style = "color: #fff" class = "lang-ua">Контакти</h2>
+		<h2 style = "color: #fff" class = "lang-en">Contacts</h2>
+		<a href="https://t.me/di_thumbelina" >Telegram</a>
+		<a href="mailto:diana.yarovih@gmail.com">Mail</a>
+        <a href="https://github.com/DianaYarovykh">GitHub</a>
+		<a href="tel:+380635284843">Phone</a>
+    </div>
+
+    <header>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		<button class="lang-switch" onclick="toggleLanguage()">EN / UA</button>
+        <img src="D:\Универ\Новая папка\фотограия 3х4.jpg" class="profile-image">
+		<h1 style = "text-align: center" class = "lang-ua">Ярових Діана</h1>
+		<h1 style = "text-align: center" class = "lang-en">Yarovykh Diana</h1>
+    </header>
+    <div class="container">
+        <h2 class = "lang-ua">Досвід роботи</h2>
+		<h2 class = "lang-en">Work experience</h2>
+		<p class = "lang-ua">AСС TB: SMM-менеджер</p>
+		<p class = "lang-en">ASS TV: SMM-manager</p>
+		<p style = "font-size: 16px;" class = "lang-ua"><i>серпень 2023 - вересень 2023</i></p>
+		<p style = "font-size: 16px;" class = "lang-en"><i>august 2023 - september 2023</i></p>
+
+        <h2 class = "lang-ua">Освіта</h2>
+		<h2 class = "lang-en">Education</h2>
+        <p class = "lang-ua">Національний технічний університет України (КПІ)</p>
+		<p class = "lang-en">National technical university of Ukraine (KPI)</p>
+		<p style = "font-size: 18px; line-height: 0.5;" class = "lang-ua"><i>Комп'ютерні науки | вересень 2020 - ...</i></</p>
+		<p style = "font-size: 18px; line-height: 0.5;" class = "lang-en"><i>Computer science specialist | september 2020 - ...</i></p>
+		<p style = "color: #fff">jghfjkl</p>
+
+
+        <h2 class = "lang-ua">Технічні навички</h2>
+		<h2 class = "lang-en">Tech skills</h2>
+        <ul>
+            <li>С++/С#</li>
+            <li>HTML/CSS/JavaScript</li>
+            <li>Pyton</li>
+			<li>SQL/MySQL/SQLite</li>
+			<li>Java</li>
+			<li>MS Office</li>
+			<li>Adobe:</li>
+			<ul>
+				<li>Photoshop</li>
+				<li>Lightroom</li>
+				<li>Premiere Pro</li>
+			</ul>
+        </ul>
+		
+		<div class="soft-skills">
+            <h2 class="lang-ua">Особисті якості</h2>
+            <h2 class="lang-en">Soft Skills</h2>
+			<ul>
+				<li class="lang-ua"> - Робота в команді</li>
+				<li class="lang-en"> - Teamwork</li>
+				<li class="lang-ua"> - Креативність</li>
+				<li class="lang-en"> - Creativity</li>
+				<li class="lang-ua"> - Швидко навчаюся новому</li>
+				<li class="lang-en"> - Quickly learn new things</li>
+				<li class="lang-ua"> - Комунікативність</li>
+				<li class="lang-en"> - Communicative</li>
+				<li class="lang-ua"> - Лідерські якості</li>
+				<li class="lang-en"> - Leadership qualities</li>
+			</ul>
+
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+		// Функция для переключения языка
+        function toggleLanguage() {
+            const elementsToTranslate = document.querySelectorAll('.lang-en, .lang-ua');
+            elementsToTranslate.forEach(element => {
+                if (element.classList.contains('lang-en')) {
+                    element.style.display = (element.style.display === 'none') ? 'block' : 'none';
+                }
+                if (element.classList.contains('lang-ua')) {
+                    element.style.display = (element.style.display === 'block') ? 'none' : 'block';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
