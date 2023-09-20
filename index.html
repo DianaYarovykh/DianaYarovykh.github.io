@@ -32,7 +32,7 @@
             box-shadow: 0 0 10px rgba(163, 86, 24, 39);
         }
 		
-		/* Стили для рамки с информацией о Soft Skills */
+	
         .soft-skills {
 			position: relative;
             bottom: 260px;
@@ -45,7 +45,7 @@
 			height: 190px;
         }
 
-        /* Стили для заголовка Soft Skills */
+       
         .soft-skills h2 {
             font-size: 24px;
             margin-top: 0;
@@ -99,15 +99,15 @@
             font-size: 30px;
         }
 
-        /* Стили для изображения */
+       
         .profile-image {
             display: block;
             margin: 0 auto;
-            width: 120px; /* Установите желаемую ширину изображения */
-            border-radius: 10%; /* Для круглой формы */
+            width: 120px;
+            border-radius: 10%; 
         }
 		
-		/* Стили для кнопки переключения языка */
+	
         .lang-switch {
             position: relative;
             top: 303px;
@@ -118,14 +118,14 @@
             border: none;
             cursor: pointer;
         }
-		/* Стили для английского текста */
+	
         .lang-en {
-            display: none; /* Сначала скрыть английский текст */
+            display: none; 
         }
 
-        /* Стили для русского текста */
+       
         .lang-ua {
-            display: block; /* отображается по умолчанию */
+            display: block; 
         }
 		
 		
@@ -145,7 +145,7 @@
     <header>
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 		<button class="lang-switch" onclick="toggleLanguage()">EN / UA</button>
-        <img src="D:\Универ\Новая папка\фотограия 3х4.jpg" class="profile-image">
+        <img src="фотограия 3х4.jpg" class="profile-image">
 		<h1 style = "text-align: center" class = "lang-ua">Ярових Діана</h1>
 		<h1 style = "text-align: center" class = "lang-en">Yarovykh Diana</h1>
     </header>
@@ -210,7 +210,7 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
-		// Функция для переключения языка
+	
         function toggleLanguage() {
             const elementsToTranslate = document.querySelectorAll('.lang-en, .lang-ua');
             elementsToTranslate.forEach(element => {
